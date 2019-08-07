@@ -34,4 +34,32 @@ $(document).ready(function() {
 		}
 		
 	});
+	$('.sl').slick({
+		// autoplay: true,
+		// autoplaySpeed: 10000,
+		speed: 600,
+		zIndex: 0,
+		asNavFor: '.sl2',
+
+  });
+
+  $('.sl2').slick({
+		dots: true,
+		zIndex: 0,
+		asNavFor: '.sl',
+		focusOnSelect: true,
+		slidesToShow: 5,
+		arrows: false,
+		centerMode: true,
+		centerPadding: '40px',
+		responsive: [
+		{
+			breakpoint: 900,
+			settings: {
+				slidesToShow: 3,
+			}
+		}
+		]
+
+  });
 });

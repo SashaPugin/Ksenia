@@ -26,11 +26,13 @@
  	margin-bottom: 50px;
  	background: #eeece1;
  	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
  	
  }
  header{
 	position: sticky;
 	top: -300px;
+	z-index: 1;
  }
  .head{
  	height: 300px;
@@ -104,6 +106,81 @@ footer{
 	height: 70px;
 	background: url(img/fon-head1.jpg);
 }
+
+/*Слайдер*/
+
+.slider{
+	max-width: 900px;
+	margin: 20px auto;
+}
+.sl_img{
+	width: 900px;
+}
+.sl_slide{
+	position: relative;
+}
+.sl_text{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	padding: 20px 0;
+}
+.sl_zag, .sl_desc{
+	maggin: 0;
+	padding: 0 10px;
+}
+
+
+.sl2{
+	margin: 40px 0 0;
+}
+.sl2_slide{
+	margin: 0 7px;
+	outline: none;
+}
+.sl2_slide img{
+	padding: 3px;
+	background: #d0d0dd;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: bacground .3s;
+}
+.sl2_slide img:hover, .slick-current img{
+	background: #fff;
+}
+
+.slick-dots li button{
+	border: 1px solid #777;
+	border-radius: 50%;
+	transition: border-color .3s;
+}
+
+.slick-dots li button:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #777;
+	opacity: 1;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+}
+
+.slick-dots li button:hover, 
+.slick-dots li.slick-active button{
+	border-color: #fff;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li.slick-active button:before{
+	background: #fff;
+}
+
 
 /*График*/
 
